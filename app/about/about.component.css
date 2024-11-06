@@ -1,0 +1,9 @@
+.header {
+  width: 100vw;
+  height: 70vh;
+  background: url("../../../public/felix-roedder.jpg") center center no-repeat;
+  background-size: auto 100%;
+}
+b {
+  color: blanchedalmond;
+}

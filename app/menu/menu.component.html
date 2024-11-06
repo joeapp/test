@@ -1,0 +1,84 @@
+<mat-toolbar role="heading">
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu Button">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button
+      mat-menu-item
+      routerLink="/about"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
+      <mat-icon>face</mat-icon>
+      <span>About me</span>
+    </button>
+    <button
+      mat-menu-item
+      routerLink="/research"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
+      <mat-icon>school</mat-icon>
+      <span>My research</span>
+    </button>
+    <button
+      mat-menu-item
+      routerLink="/faq"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
+      <mat-icon>question_mark</mat-icon>
+      <span>FAQ</span>
+    </button>
+    <button
+      mat-menu-item
+      routerLink="/contact"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
+      <mat-icon>mail</mat-icon>
+      <span>Contact</span>
+    </button>
+  </mat-menu>
+  <span>Dr. Felix Rödder</span>
+  <span class="spacer"></span>
+  <button
+    mat-icon-button
+    [matMenuTriggerFor]="translations"
+    aria-label="Translation Menu"
+  >
+    <mat-icon>translate</mat-icon>
+  </button>
+  <mat-menu #translations="matMenu">
+    <button mat-menu-item>
+      <span>deutsch</span>
+      <mat-icon>directions_car</mat-icon>
+    </button>
+    <button mat-menu-item>
+      <span>english</span>
+      <mat-icon>fastfood</mat-icon>
+    </button>
+    <button mat-menu-item>
+      <span>français</span>
+      <mat-icon>wine_bar</mat-icon>
+    </button>
+    <button mat-menu-item>
+      <span>日本語</span>
+      <mat-icon>catching_pokemon</mat-icon>
+    </button>
+    <button mat-menu-item>
+      <span>tiếng việt</span>
+      <mat-icon>motorcycle</mat-icon>
+    </button>
+  </mat-menu>
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Contact Button"
+    routerLink="/contact"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+  >
+    <mat-icon>mail</mat-icon>
+  </button>
+</mat-toolbar>
